@@ -1,0 +1,26 @@
+{
+  "name": "construction-material-delivery",
+  "version": "1.0.0",
+  "main": "src/app.ts",
+  "scripts": {
+    "android": "ns run android --no-hmr",
+    "ios": "ns run ios --no-hmr",
+    "build:android": "ns build android --release --key-store-path your-keystore.jks --key-store-password your-password --key-store-alias your-alias --key-store-alias-password your-alias-password",
+    "build:ios": "ns build ios --release --for-device",
+    "build": "npm run build:android && npm run build:ios"
+  },
+  "dependencies": {
+    "@nativescript/core": "~8.8.0",
+    "react": "^18.2.0",
+    "react-nativescript": "^5.0.0",
+    "react-nativescript-navigation": "^5.0.0"
+  },
+  "devDependencies": {
+    "@nativescript/android": "8.8.0",
+    "@nativescript/ios": "8.8.0",
+    "@nativescript/types": "~8.8.0",
+    "@nativescript/webpack": "~5.0.8",
+    "@types/react": "npm:types-react-without-jsx-intrinsics@^18.0.17",
+    "typescript": "~5.4.0"
+  }
+}
